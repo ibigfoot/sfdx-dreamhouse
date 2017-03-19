@@ -10,7 +10,10 @@
 				}, { 
 					"url": "heroku/ruby" 
 				} 
-			]
+			],
+			"addons":[
+        		"salesforce"
+      		]
 		}
 	}
 }
