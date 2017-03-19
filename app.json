@@ -1,0 +1,16 @@
+{
+	"environments": {
+		"tests": {
+			"scripts": {
+				"test": "sfdx force:testrunner:run --configfile test/test-runner-config.json --jobname master"
+			},
+			"buildpacks": [ 
+				{ 
+					"url": "https://github.com/heroku/heroku-buildpack-google-chrome" 
+				}, { 
+					"url": "heroku/ruby" 
+				} 
+			]
+		}
+	}
+}
